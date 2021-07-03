@@ -2,7 +2,7 @@ package com.test.algo.week1;
 
 import java.util.ArrayList;
 
-public class ex01 {
+public class Ex01 {
 
     private static long solution1(int a, int b){
 
