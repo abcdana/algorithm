@@ -32,6 +32,9 @@ public class Ex01 {
 
             answer[i-1] = i;
             percentMap.put(i, (float) failCount / tryUser);
+
+            System.out.println(percentMap);
+
         }
 
         for (int i = 0; i < answer.length; i++) {
