@@ -10,6 +10,7 @@ public class NNumbersSpacedByX {
             answer[i] = num * (i+1);
         }
 
+        System.out.println(answer);
 
         return answer;
     }
