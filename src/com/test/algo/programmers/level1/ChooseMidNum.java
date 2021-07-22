@@ -7,6 +7,7 @@ public class ChooseMidNum {
 
         for (int i=(s.length()-1)/2; i<s.length()-1; i++){
         }
+        System.out.println();
 
         return answer;
     }
