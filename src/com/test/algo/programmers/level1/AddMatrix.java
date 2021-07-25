@@ -9,8 +9,11 @@ public class AddMatrix {
 
     public static void main(String[] args) {
         int[][] arr1 = {{1,2},{2,3}};
+
+
         int[][] arr2 = {{3,4},{5,6}};
 
 
+        System.out.println(solution(arr1, arr2));
     }
 }
