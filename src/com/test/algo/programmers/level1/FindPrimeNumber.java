@@ -13,6 +13,7 @@ public class FindPrimeNumber {
 
     public static void main(String[] args) {
 
+        int b = 10;
         int n = 10;
         System.out.println(solution(n));
 
