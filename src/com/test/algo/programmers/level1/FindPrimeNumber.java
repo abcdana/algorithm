@@ -6,22 +6,22 @@ public class FindPrimeNumber {
 
     public static int solution(int n) {
         int answer = 0;
-        ArrayList<Integer> primeNum = new ArrayList();
 
-        for (int i = 0; i <= n; i++) {
-            primeNum.add(i);
+        boolean[] primeNum = new boolean[n+1];
+        primeNum[1] = true;
+
+        for(int i = 2; i <= n; i++) {
+            for(int j = 2; i*j <= n; j++) {
+                primeNum[i*j] = true;
+            }
         }
 
         for (int i = 2; i <= n; i++){
-            if (primeNum.get(i) == 0) continue;
-            for (int j = 2*i; j <= n; j+=i) primeNum.set(j, 0);
+            if (primeNum[i] == true) answer++;
         }
 
-        for (int i = 2; i <= n; i++) {
-            if (primeNum.get(i) != 0 && primeNum.get(i) != 1) answer++;
-        }
 
-        return answer;
+        return answer - 1;
     }
 
     public static void main(String[] args) {
