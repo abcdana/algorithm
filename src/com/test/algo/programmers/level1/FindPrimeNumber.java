@@ -20,6 +20,7 @@ public class FindPrimeNumber {
             if (primeNum[i] == true) answer++;
         }
 
+        System.out.println(answer);
 
         return answer - 1;
     }
