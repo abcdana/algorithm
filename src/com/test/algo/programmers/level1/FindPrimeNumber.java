@@ -12,6 +12,7 @@ public class FindPrimeNumber {
             arr[i]=i;
         }//0=1 n-1 =n이 된다
         arr[1]=0;
+
         for(int i=2;i<=n;i++){//2부터 계산해줌
             if(arr[i]==0)continue;
             for(int j=i+i;j<=n;j+=i){
