@@ -9,6 +9,8 @@ public class AddAllDigit {
         System.out.println("Hello Java");
 
         System.out.println();
+
+        System.out.println();
         return answer;
     }
 
