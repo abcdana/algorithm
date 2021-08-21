@@ -7,7 +7,6 @@ public class Ex01 {
     private static long solution1(int a, int b){
 
         //문제 1. 두 정수 사이의 모든 수들의 합?
-
         long answer = 0;
 
         if (a>b) {
