@@ -16,7 +16,6 @@ public class Ex01 {
             }
         }else {
             //b가 a보다 클 경우 a부터 b까지 차례대로 값을 쌓아 return
-            //b가 a보다 클 경우 a부터 b까지 차례대로 값을 쌓아 return
             for (int i=a; i<=b; i++) {
                 answer += i;
             }
