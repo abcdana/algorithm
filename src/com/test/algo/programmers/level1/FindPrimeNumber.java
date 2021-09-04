@@ -10,7 +10,7 @@ public class FindPrimeNumber {
 
         for(int i=0;i<=n;i++){
             arr[i]=i;
-        }//0=1 n-1 =n이 된다
+        }//0=1 n-1 =n이 된다. ->
         arr[1]=0;
 
         for(int i=2;i<=n;i++){//2부터 계산해줌
