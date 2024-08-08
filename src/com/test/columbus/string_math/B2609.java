@@ -1,10 +1,9 @@
 package com.test.columbus.string_math;
 
-import javax.imageio.IIOException;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class b_2609 {
+public class B2609 {
 
     /*
     문제

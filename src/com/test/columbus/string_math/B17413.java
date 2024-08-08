@@ -3,7 +3,7 @@ package com.test.columbus.string_math;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class b_17413 {
+public class B17413 {
 
     /*
     문제
