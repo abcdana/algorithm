@@ -1,0 +1,40 @@
+import java.util.*;
+
+class Solution {
+    public int[] solution(int l, int r) {
+        List<Integer> result = new ArrayList<>();
+        Queue<String> queue = new LinkedList<>();
+        
+        // 초기 값으로 "5"와 "0"을 넣어 숫자 조합을 시작
+        queue.add("5");
+        queue.add("0");
+        
+        // BFS로 "0"과 "5"로만 이루어진 숫자 생성
+        while (!queue.isEmpty()) {
+            String current = queue.poll();
+            // 문자열을 정수로 변환
+            int num = Integer.parseInt(current);
+            
+            // 생성된 숫자가 주어진 범위 내에 있으면 결과에 추가
+            if (num >= l && num <= r) {
+                result.add(num);
+            }
+            
+            // 주어진 범위를 넘으면 더 이상 탐색하지 않음
+            if (num > r) continue;
+            
+            // "0"과 "5"로 새로운 숫자를 생성
+            queue.add(current + "0");
+            queue.add(current + "5");
+        }
+        
+        // 조건에 맞는 숫자가 없으면 -1 반환
+        if (result.isEmpty()) {
+            return new int[]{-1};
+        }
+        
+        // 결과를 배열로 변환하여 반환
+        Collections.sort(result); // 혹시 생성 순서가 뒤섞였을 수 있으므로 정렬
+        return result.stream().mapToInt(Integer::intValue).toArray();
+    }
+}
