@@ -1,0 +1,29 @@
+import java.util.*;
+
+class Solution {
+    public long solution(String numbers) {
+        long answer = 0;
+        
+        List<String> arrayList = new ArrayList<>();
+        
+        arrayList.add("zero");
+        arrayList.add("one");
+        arrayList.add("two");
+        arrayList.add("three");
+        arrayList.add("four");
+        arrayList.add("five");
+        arrayList.add("six");
+        arrayList.add("seven");
+        arrayList.add("eight");
+        arrayList.add("nine");
+        
+        
+        StringBuilder sb = new StringBuilder();
+        
+        for(int i=0; i<arrayList.size(); i++){
+            numbers = numbers.replace(arrayList.get(i), Integer.toString(i));
+        }
+        
+        return Long.parseLong(numbers);
+    }
+}
