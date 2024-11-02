@@ -1,4 +1,4 @@
-package com.test.algo.baekjoon;
+package com.test.algo.baekjoon.bronze;
 
 import java.util.Scanner;
 
