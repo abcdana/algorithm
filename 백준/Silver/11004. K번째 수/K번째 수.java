@@ -6,18 +6,17 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer stk = new StringTokenizer(br.readLine());
-
         int N = Integer.parseInt(stk.nextToken());
         int K = Integer.parseInt(stk.nextToken());
-        List<Integer> list = new ArrayList<>();
 
+        int[] arr = new int[N];
         stk = new StringTokenizer(br.readLine());
-        for(int i = 0; i < N; i++){
-            list.add(Integer.parseInt(stk.nextToken()));
+        for (int i = 0; i < N; i++) {
+            arr[i] = Integer.parseInt(stk.nextToken());
         }
-        Collections.sort(list);
-        
-        System.out.println(list.get(K - 1));
+
+        Arrays.sort(arr);
+        System.out.println(arr[K - 1]);
         br.close();
     }
 }
